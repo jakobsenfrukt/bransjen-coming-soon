@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Franklin:900&display=swap');
+
+html {
+  height: 100%;
+  font-size: 18px;
+}
+
+body {
+  background: white;
+  color: black;
+  min-height: 100%;
+  padding: 2rem;
+  margin: 0;
+
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: black;
+}
+
+a.mail {
+  display: block;
+  font-size: 1.5rem;
+  margin: 2rem auto 3rem;
+  position: relative;
+}
+
+p, a {
+  max-width: 30rem;
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 1.1;
+  margin-bottom: 2rem;
+  max-width: 40rem;
+}
+
+.logo {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+.logo img {
+  width: 200px;
+}
+
+.logo:after {
+  content: url('uc-dig.png');
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+h1:after {
+  content: url('uc-caution.gif');
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+}
+
+a.mail:after {
+  content: url('uc-area.gif');
+  display: block;
+  position: absolute;
+  bottom: -10rem;
+  right: -20rem;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h1:after {
+    content: " ";
+  }
+  
+  a:after {
+    content: " ";
+  }
+}
